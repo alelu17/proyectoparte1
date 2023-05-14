@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jeremías</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="https://scontent.ftuc1-1.fna.fbcdn.net/v/t1.6435-9/116804428_3630882680272420_3168396109875884555_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFv0QzbAqF6Q9pqdJ8o4xXh5DCMlAN0eifkMIyUA3R6J-RIWFARlkPQ90VGSJnJoEYAVtCJpB9H2X6Z-KrtQY5y&_nc_ohc=x7GsiKpro6MAX8cWAwq&_nc_ht=scontent.ftuc1-1.fna&oh=00_AfBYkyjdyuQcyMzvABDsv9GT46utQeRCIKtH7l8rfoHnrg&oe=6484C693" alt="">
+            </div>
+            <h1>JEREMIAS PEDRAZA</h1>
+            <h2>Estudiante de Programacion</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jeremias Pedraza</span> Estudiante de programacion, este es mi proyecto de portfolio web para Argentina programa</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            17-01-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            381-6089745
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            recaldetvrc@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.instagram.com/jeremiaspedraza/
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Tafi viejo,Tucuman, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>MOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="https://web.whatsapp.com/"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico en informatica</h4>
+                        <span class="casa">Secundaria Tafi Viejo</span>
+                        <span class="fecha">2015 - 2021</span>
+                        <p>Tuve conocimientos sobre la informatica durante esta etapa que me llevo a seguir carreras relacionadas a la misma</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingenieria en Sistemas</h4>
+                        <span class="casa">Universidad Tecnologica de Tucuman</span>
+                        <span class="fecha">2022 - actualmente</span>
+                        <p>Estudiando actualmente Ing. en Sistemas para poder abastecer a mis estudios de informatica</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Primaria</h4>
+                        <span class="casa">Fray cayetano Rodriguez</span>
+                        <span class="fecha">2009 - 2014 </span>
+                        <p>El lugar donde creci y fui formando mis estudios</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Encargado de Ferreteria</h4>
+                        <span class="casa">Ferreteria Las Pineiro</span>
+                        <span class="fecha">2019 - actualmente</span>
+                        <p>Encargado de actividades completa en ferreteria.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Bobinador</h4>
+                        <span class="casa">Bobinados Carreras SA</span>
+                        <span class="fecha">2018 - 2019</span>
+                        <p>Encargado en desarmar y armar motores,con conocimientos basicos de electricidad y mecanica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Entrenador Personal</h4>
+                        <span class="casa">AMAIP</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Conocimientos avanzados de fitness y preparacion fisica.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://computacion.dc.uba.ar/wp-content/uploads/2022/04/icono-inicio-computacion.DC_.svg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="https://sutilweb.com/wp-content/uploads/2022/04/Computacion-distribuida.jpg " alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Corrientes 333, Tafi Viejo
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3816089745 - 4613262
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: recaldetvrc@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
